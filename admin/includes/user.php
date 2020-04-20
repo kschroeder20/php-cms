@@ -31,15 +31,6 @@ class User extends Db_object {
   }
 
 
-  public function escape_string($string){
-
-    $escaped_string = mysqli_real_escape_string($this->connection,$string);
-    
-    return $escape_string;
-
-  }
-
-
 } // End of User class
 
 ?>

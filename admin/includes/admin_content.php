@@ -17,8 +17,10 @@
 
         // $photo->create();
 
-        // $user = User::find_user_by_id(6);
+        // $photo = Photo::find_by_id(6);
+        // echo $photo->filename;
         // $user->last_name = "Williams";
+
 
         // $user->update();
 
@@ -34,7 +36,7 @@
 
         // }
 
-        echo INCLUDES_PATH;
+        // echo INCLUDES_PATH;
 
 
         

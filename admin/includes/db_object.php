@@ -173,6 +173,15 @@ class Db_object {
     return (mysqli_affected_rows($database->connection) == 1) ? true : false;
 
   }
+  
+
+  public function escape_string($string){
+
+    $escaped_string = mysqli_real_escape_string($this->connection,$string);
+    
+    return $escape_string;
+
+  }
 
 
 }
