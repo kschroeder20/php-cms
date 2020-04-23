@@ -4,6 +4,12 @@ width: 200px;
 border-radius: 5px;
 }
 
+.user_image {
+
+  width: 62px;
+  height: 62px;
+}
+
 /* Sidebar stops */
 .photo-info-box {
 

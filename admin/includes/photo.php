@@ -15,7 +15,7 @@ class Photo extends Db_object {
 
   public $tmp_path;
   public $upload_directory = "images";
-  public $custom_errors = array();
+  public $errors = array();
   public $upload_errors_array = array ( 
     0=>"There is no error, the file uploaded with success",
     1=>"The uploaded file exceeds the upload_max_filesize directive in php.ini",
@@ -26,30 +26,6 @@ class Photo extends Db_object {
   );
 
   // This is passing $_FILES['upload_file'] as an argument
-
-  public function set_file($file) {
-    if(empty($file) || !$file || !is_array($file)) {
-
-      $this->errors[] = "There was no file uploaded here";
-
-      return false;
-
-    }elseif($file['error'] != 0) {
-
-      $this->errors[] = $this->upload_errors_array[$file['error']];
-
-      return false;
-
-    } else {
-
-      $this->filename = basename($file['name']);
-      $this->tmp_path = $file['tmp_name'];
-      $this->type = $file['type'];
-      $this->size = $file['size'];
-
-    }
-
-  }
 
   public function picture_path() {
 
