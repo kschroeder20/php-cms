@@ -12,7 +12,7 @@ class Db_object {
     6=>"Missing a temporary folder"
   );
   
-  protected static $db_table = "users";
+  // protected static $db_table = "users";
 
 
   public static function find_all() {
@@ -191,6 +191,18 @@ class Db_object {
     
     return $escape_string;
 
+  }
+
+  public static function count_all() {
+
+    global $database;
+
+    $sql = "SELECT COUNT(*) FROM " . static::$db_table;
+    $result_set = $database->query($sql);
+    $row = mysqli_fetch_array($result_set);
+
+    return array_shift($row);
+    
   }
 
 
