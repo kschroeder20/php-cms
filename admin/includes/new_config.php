@@ -2,10 +2,10 @@
 
 // Database Connection Constants
 
-define('DB_HOST','localhost');
-define('DB_USER','root');
-define('DB_PASS','');
-define('DB_NAME','gallery_db');
+define('DB_HOST','zy4wtsaw3sjejnud.cbetxkdyhwsb.us-east-1.rds.amazonaws.com	');
+define('DB_USER','p4os6ig0mlfna42w');
+define('DB_PASS','e48wzbh41k8u5qkf');
+define('DB_NAME','bc3b6hgbosmpaj0s');
 
 
 ?>
