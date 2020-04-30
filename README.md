@@ -6,8 +6,8 @@ This is a fully functional photo gallery system I built to sharpen my PHP and OO
 
 Use the following login information to log into the CMS:
 
-user: kevin
-password: 123
+- user: kevin
+- password: 123
 
 ## Technologies Used
 
