@@ -31,9 +31,6 @@ $comments = Comment::find_all();
           Comments
         </h1>
 
-        <a href="add_user.php" class="btn btn-primary">Add Comment</a>
-
-
         <div class="col-md-12">
 
           <table class="table table-hover">

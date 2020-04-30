@@ -4,3 +4,17 @@
   height: 150px !important;
 
 }
+
+.pager .active a{
+
+  color: white;
+  background-color: black;
+
+}
+
+.pager .active a:hover{
+
+  color: white;
+  background-color: black;
+
+}
